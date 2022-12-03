@@ -1,1143 +1,1319 @@
-*{
-    color: white;
-    padding: 0;
-    margin: 0;
-    border: 0;
+* {
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
-body{
-    background-color: black;
+body {
+  background-color: #000;
 }
-#Vinicius{
-    height: 50px;
-    padding: 25px 50px 25px 50px;
+#Vinicius {
+  height: 50px;
+  padding: 25px 50px 25px 50px;
 }
-header{
-    height: 100px;
+header {
+  height: 100px;
 }
+.header {
+  font: 20px bold, Century Gothic;
+  text-decoration: none;
+  position: relative;
+  top: -62.5px;
+  left: 250px;
+  margin-left: 50px;
+  text-shadow: 1px 1px 2px black;
+}
+#Fundo {
+  position: absolute;
+  width: 600px;
+  top: 0;
+  right: 0px;
+}
+#T1 {
+  position: absolute;
 
-#Fundo{
-    position: absolute;
-    width: 600px;
-    top: 0px;
-    left: calc(100% - 600px);
+  left: 50px;
+  top: 190px;
+  font: 20px normal, Century Gothic;
 }
-
-#T1{
-    left: 50px;
-    position: absolute;
-    top: 190px;
-    font: 20px normal, Century Gothic;
-    }
-#T2{
-    left: 50px;
-    position: absolute;
-    top: 220px;
-    font: 100px normal, Century Gothic;
-
+#T2 {
+  left: 50px;
+  position: absolute;
+  top: 220px;
+  font: 100px normal, Century Gothic;
 }
-#T3{
-    left: 85px;
-    position: absolute;
-    top: 340px;
-    font: 25px normal, Century Gothic;
-    color: #70f26c;
+#T3 {
+  left: 85px;
+  position: absolute;
+  top: 340px;
+  font: 25px normal, Century Gothic;
+  color: #70f26c;
 }
-#About-Me{
-    text-decoration: none;
-    left: 130px;
-    position: absolute;
-    top: 390px;
-    color: black;
-    background-color: #70f26c;
-    border-radius: 50px;
-    padding: 10px 15px 10px 15px;
-    font: 25px bold, Century Gothic;
+#About-Me {
+  text-decoration: none;
+  left: 130px;
+  position: absolute;
+  top: 390px;
+  color: #000;
+  background-color: #70f26c;
+  border-radius: 50px;
+  padding: 10px 15px 10px 15px;
+  font: 25px bold, Century Gothic;
 }
-.header{
-    font: 20px bold, Century Gothic;
-    text-decoration: none;
-    position: relative;
-    top: -62.5px;
-    left: 250px;
-    margin-left: 50px;
+#body {
+  background-color: #141516;
+  position: absolute;
+  top: 648px;
+  width: 100%;
+  height: 660px;
+  box-shadow: 0 0 30px 30px #000;
 }
-#body{
-    background-color: #141516;
-    position: absolute;
-    top: 648px;
-    width: 100%;
-    height: 660px;
-    box-shadow: 0px 0px 30px 30px rgb(0, 0, 0);
-
+#text {
+  margin-left: 50px;
+  position: absolute;
+  width: 800px;
+  font: 18px bold, Century Gothic;
+  float: left;
+  margin-top: 50px;
 }
-#text{
-    margin-left: 50px;
-    position: absolute;
-    width: 800px;
-    font: 18px bold, Century Gothic;
-    float: left;
-    margin-top: 50px;
+#foto {
+  position: absolute;
+  right: 50px;
+  top: calc(50% - 175px);
+  width: 350px;
 }
-#foto{
-    position: absolute;
-    left: calc(100% - 400px);
-    top: calc(50% - 175px);
-    width: 350px;
+#experiencia {
+  background-image: url(img/Fundo2.svg);
+  position: absolute;
+  top: 648px;
+  width: 100%;
+  height: 660px;
 }
-
-#experiencia{
-    background-image: url(img/Fundo2.svg);
-    position: absolute;
-    top: 648px;
-    width: 100%;
-    height: 660px;
-
+#xp {
+  left: calc(50% - 245px);
+  position: absolute;
+  font: 30px normal, Century Gothic;
+  text-align: center;
+  width: 490px;
+  top: -25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #000;
+  backdrop-filter: blur(3px) saturate(200%);
+  -webkit-backdrop-filter: blur(3px) saturate(200%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  box-shadow: 0 0 15px 5px #000;
 }
-#xp{
-    left: calc(50% - 245px);
-    position: absolute;
-    font: 30px normal, Century Gothic;
-    text-align: center;
-    width: 490px;
-    top: -25px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: black;
-
-    backdrop-filter: blur(3px) saturate(200%);
-    -webkit-backdrop-filter: blur(3px) saturate(200%);
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);   
-    box-shadow: 0px 0px 15px 5px      #000000; 
+#xp1 {
+  position: absolute;
+  width: 10px;
+  left: 10px;
+  height: 10px;
+  background-color: #70f26c;
+  border-radius: 50%;
+  top: -5px;
+  box-shadow: 0 0 7.5px 2.5px #70f26c;
+  animation-name: xp1;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
-#xp1{
-    position: absolute;
-    width: 10px;
+@keyframes xp1 {
+  0% {
     left: 10px;
-    height: 10px;
-    background-color: #70f26c;
-    border-radius: 50%;
     top: -5px;
-    box-shadow: 0px 0px 7.5px 2.5px  #70f26c;
-
-
-    animation-name: xp1;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+  }
+  25% {
+    left: calc(50% - 245px);
+    top: -5px;
+  }
+  30% {
+    left: calc(50% - 245px);
+    top: 28px;
+  }
+  70% {
+    left: calc(50% + 240px);
+    top: 28px;
+  }
+  75% {
+    left: calc(50% + 240px);
+    top: -5px;
+  }
+  100% {
+    left: calc(100% + 10px);
+    top: -5px;
+  }
 }
-
-@keyframes xp1{
-    0%{
-        left: 10px;
-        top:-5px
-
-    }
-    25%{
-        left: calc(50% - 245px);
-        top:-5px
-    }
-    30%{
-        left: calc(50% - 245px);
-        top: 28px;
-    }
-    70%{
-        left: calc(50% + 240px);
-        top: 28px;
-    }
-    75%{
-        left: calc(50% + 240px);
-        top:-5px
-    }
-    100%{
-        left: calc( 100% + 10px);
-        top:-5px
-
-    }
+#xp2 {
+  position: absolute;
+  width: 10px;
+  left: calc(100% - 10px);
+  height: 10px;
+  background-color: #6aff2a;
+  border-radius: 50%;
+  top: -5px;
+  box-shadow: 0 0 7.5px 2.5px #75ec58;
+  animation-name: xp2;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
-#xp2{
-    position: absolute;
-    width: 10px;
+@keyframes xp2 {
+  0% {
     left: calc(100% - 10px);
-    height: 10px;
-    background-color: #6AFF2A;
-    border-radius: 50%;
     top: -5px;
-    box-shadow: 0px 0px 7.5px 2.5px  #75ec58;
-
-
-    animation-name: xp2;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-
-}
-@keyframes xp2{
-    0%{
-        left: calc(100% - 10px);
-        top:-5px
-
-    }
-    25%{
-        left: calc(50% + 240px);
-        top:-5px;
-
-
-    }
-    30%{
-        left: calc(50% + 240px);
-        top: -28px;
-
-
-    }
-    70%{
-        left: calc(50% - 245px);
-        top: -28px;
-    }
-    75%{
-        left: calc(50% - 245px);
-        top:-5px
-    }
-    100%{
-        left: 10px;
-        top:-5px
-
-    }
-}
-#caminho{
-    position:absolute;
-    left: 0.15%;
-    top: -6px;
-    width: 99.7%;
-    height: 9px;
-
-    border: 1px solid rgb(39, 39, 39);
-    background-color: #000000;
-}
-/* ================================ HTML ================================ */
-#html{
-
-    position: absolute;
-    top: 80px;
-    left: calc(50% - 600px);
-    border-radius: 10px;
-    box-shadow: 0px 0px 30px 30px rgb(0, 0, 0);
-    width: 200px;
-    height: 200px;
-
-    backdrop-filter: blur(3px) saturate(200%);
-    -webkit-backdrop-filter: blur(3px) saturate(200%);
-    background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
-    
-
-    transition: linear 0.5s;
-    
-
-}
-#html:hover{
-    background-color: rgba(255, 255, 255, 0.8);
-
-}
-#logohtml{
-    position: relative;
-    width: 150px;
-    top: 10px;
-    left: 25px;
-
-    transition: 5s linear; 
-
-}
-#logohtml:hover{
-    animation-name: html;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-@keyframes html{
-    0%{
-        transform: rotate(0deg);
-    }
-    25%{
-        transform: rotate(5deg);
-    }
-    50%{
-        transform: rotate(0deg);
-    }
-    75%{
-        transform: rotate(-5deg);
-    }
-    100%{
-        transform: rotate(0deg);
-    }
-}
-#txt_html{
-    position: absolute;
-    top: 140px;
-    font: 40px normal, impact;
-    color: #141414;
-    text-align: center;
-    width: 100%;
-}
-/* ================================ CSS ================================ */
-#css{
-
-    position: absolute;
-    top: 80px;
-    left: calc(50% - 350px);
-    border-radius: 10px;
-    box-shadow: 0px 0px 30px 30px rgb(0, 0, 0);
-    width: 200px;
-    height: 200px;
-
-    backdrop-filter: blur(3px) saturate(200%);
-    -webkit-backdrop-filter: blur(3px) saturate(200%);
-    background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
-    
-
-    transition: linear 0.5s;
-    
-
-}
-#css:hover{
-    background-color: rgba(255, 255, 255, 0.8);
-
-}
-#logocss{
-    position: relative;
-    width: 130px;
-    top: 21px;
-    left: 33px;
-
-    transition: 5s linear; 
-
-}
-#logocss:hover{
-    animation-name: css;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-@keyframes css{
-    0%{
-        transform: rotate(0deg);
-    }
-    25%{
-        transform: rotate(5deg);
-    }
-    50%{
-        transform: rotate(0deg);
-    }
-    75%{
-        transform: rotate(-5deg);
-    }
-    100%{
-        transform: rotate(0deg);
-    }
-}
-#txt_css{
-    position: absolute;
-    top: 140px;
-    font: 40px normal, impact;
-    color: #141414;
-    text-align: center;
-    width: 100%;
-}
-/* ================================ JS ================================ */
-#js{
-
-    position: absolute;
-    top: 80px;
-    left: calc(50% - 100px);
-    border-radius: 10px;
-    box-shadow: 0px 0px 30px 30px rgb(0, 0, 0);
-    width: 200px;
-    height: 200px;
-
-    backdrop-filter: blur(3px) saturate(200%);
-    -webkit-backdrop-filter: blur(3px) saturate(200%);
-    background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
-    
-
-    transition: linear 0.5s;
-    
-
-}
-#js:hover{
-    background-color: rgba(255, 255, 255, 0.8);
-
-}
-#logojs{
-    position: relative;
-    width: 220px;
-    top: 25px;
-    left: -8px;
-
-    transition: 5s linear; 
-
-}
-#logojs:hover{
-    animation-name: js;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-@keyframes js{
-    0%{
-        transform: rotate(0deg);
-    }
-    25%{
-        transform: rotate(5deg);
-    }
-    50%{
-        transform: rotate(0deg);
-    }
-    75%{
-        transform: rotate(-5deg);
-    }
-    100%{
-        transform: rotate(0deg);
-    }
-}
-#txt_js{
-    position: absolute;
-    top: 140px;
-    font: 40px normal, impact;
-    color: #141414;
-    text-align: center;
-    width: 100%;
-}
-/* ================================ Figma ================================ */
-#figma{
-
-    position: absolute;
-    top: 80px;
-    left: calc(50% + 150px);
-    border-radius: 10px;
-    box-shadow: 0px 0px 30px 30px rgb(0, 0, 0);
-    width: 200px;
-    height: 200px;
-
-    backdrop-filter: blur(3px) saturate(200%);
-    -webkit-backdrop-filter: blur(3px) saturate(200%);
-    background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
-    
-
-    transition: linear 0.5s;
-    
-
-}
-#figma:hover{
-    background-color: rgba(255, 255, 255, 0.8);
-
-}
-#logofigma{
-    position: relative;
-    width: 80px;
-    top: 25px;
-    left: 60px;
-
-    transition: 5s linear; 
-
-}
-#logofigma:hover{
-    animation-name: figma;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-@keyframes figma{
-    0%{
-        transform: rotate(0deg);
-    }
-    25%{
-        transform: rotate(5deg);
-    }
-    50%{
-        transform: rotate(0deg);
-    }
-    75%{
-        transform: rotate(-5deg);
-    }
-    100%{
-        transform: rotate(0deg);
-    }
-}
-#txt_figma{
-    position: absolute;
-    top: 140px;
-    font: 40px normal, impact;
-    color: #141414;
-    text-align: center;
-    width: 100%;
-}
-/* ================================ Office ================================ */
-#office{
-
-    position: absolute;
-    top: 80px;
-    left: calc(50% + 400px);
-    border-radius: 10px;
-    box-shadow: 0px 0px 30px 30px rgb(0, 0, 0);
-    width: 200px;
-    height: 200px;
-
-    backdrop-filter: blur(3px) saturate(200%);
-    -webkit-backdrop-filter: blur(3px) saturate(200%);
-    background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
-    
-
-    transition: linear 0.5s;
-    
-
-}
-#office:hover{
-    background-color: rgba(255, 255, 255, 0.8);
-
-}
-#logooffice{
-    position: relative;
-    width: 120px;
-    top: 25px;
-    left: 40px;
-
-    transition: 5s linear; 
-
-}
-#logooffice:hover{
-    animation-name: office;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-@keyframes office{
-    0%{
-        transform: rotate(0deg);
-    }
-    25%{
-        transform: rotate(5deg);
-    }
-    50%{
-        transform: rotate(0deg);
-    }
-    75%{
-        transform: rotate(-5deg);
-    }
-    100%{
-        transform: rotate(0deg);
-    }
-}
-#txt_office{
-    position: absolute;
-    top: 140px;
-    font: 40px normal, impact;
-    color: #141414;
-    text-align: center;
-    width: 100%;
-}
-#estudos{
-    left: calc(50% - 150px);
-    position: absolute;
-    font: 30px normal, Century Gothic;
-    text-align: center;
-    width: 300px;
-    top: 330px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: black;
-
-    backdrop-filter: blur(3px) saturate(200%);
-    -webkit-backdrop-filter: blur(3px) saturate(200%);
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);   
-    box-shadow: 0px 0px 15px 5px      #000000; 
-}
-/* ================================ jQuery ================================ */
-#jQuery{
-
-    position: absolute;
-    top: 435px;
-    left: calc(50% - 600px);
-    border-radius: 10px;
-    box-shadow: 0px 0px 30px 30px rgb(0, 0, 0);
-    width: 200px;
-    height: 200px;
-
-    backdrop-filter: blur(3px) saturate(200%);
-    -webkit-backdrop-filter: blur(3px) saturate(200%);
-    background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
-    
-
-    transition: linear 0.5s;
-    
-
-}
-#jQuery:hover{
-    background-color: rgba(255, 255, 255, 0.8);
-
-}
-#logojQuery{
-    position: relative;
-    width: 120px;
-    top: 25px;
-    left: 40px;
-
-    transition: 5s linear; 
-
-}
-#logojQuery:hover{
-    animation-name: jQuery;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-@keyframes jQuery{
-    0%{
-        transform: rotate(0deg);
-    }
-    25%{
-        transform: rotate(5deg);
-    }
-    50%{
-        transform: rotate(0deg);
-    }
-    75%{
-        transform: rotate(-5deg);
-    }
-    100%{
-        transform: rotate(0deg);
-    }
-}
-#txt_jQuery{
-    position: absolute;
-    top: 140px;
-    font: 40px normal, impact;
-    color: #141414;
-    text-align: center;
-    width: 100%;
-}
-/* ================================ Bootstrap ================================ */
-#Bootstrap{
-
-    position: absolute;
-    top: 435px;
-    left: calc(50% - 350px);
-    border-radius: 10px;
-    box-shadow: 0px 0px 30px 30px rgb(0, 0, 0);
-    width: 200px;
-    height: 200px;
-
-    backdrop-filter: blur(3px) saturate(200%);
-    -webkit-backdrop-filter: blur(3px) saturate(200%);
-    background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
-    
-
-    transition: linear 0.5s;
-    
-
-}
-#Bootstrap:hover{
-    background-color: rgba(255, 255, 255, 0.8);
-
-}
-#logoBootstrap{
-    position: relative;
-    width: 150px;
-    top: 25px;
-    left: 25px;
-
-    transition: 5s linear; 
-
-}
-#logoBootstrap:hover{
-    animation-name: Bootstrap;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-@keyframes Bootstrap{
-    0%{
-        transform: rotate(0deg);
-    }
-    25%{
-        transform: rotate(5deg);
-    }
-    50%{
-        transform: rotate(0deg);
-    }
-    75%{
-        transform: rotate(-5deg);
-    }
-    100%{
-        transform: rotate(0deg);
-    }
-}
-#txt_Bootstrap{
-    position: absolute;
-    top: 140px;
-    font: 40px normal, impact;
-    color: #141414;
-    text-align: center;
-    width: 100%;
-}
-/* ================================ NodeJS ================================ */
-#NodeJS{
-
-    position: absolute;
-    top: 435px;
-    left: calc(50% - 100px);
-    border-radius: 10px;
-    box-shadow: 0px 0px 30px 30px rgb(0, 0, 0);
-    width: 200px;
-    height: 200px;
-
-    backdrop-filter: blur(3px) saturate(200%);
-    -webkit-backdrop-filter: blur(3px) saturate(200%);
-    background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
-    transition: linear 0.5s;
-    
-
-}
-#NodeJS:hover{
-    background-color: rgba(255, 255, 255, 0.8);
-
-}
-#logoNodeJS{
-    position: relative;
-    width: 170px;
-    top: 35px;
-    left: 15px;
-
-    transition: 5s linear; 
-
-}
-#logoNodeJS:hover{
-    animation-name: NodeJS;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-@keyframes NodeJS{
-    0%{
-        transform: rotate(0deg);
-    }
-    25%{
-        transform: rotate(5deg);
-    }
-    50%{
-        transform: rotate(0deg);
-    }
-    75%{
-        transform: rotate(-5deg);
-    }
-    100%{
-        transform: rotate(0deg);
-    }
-}
-#txt_NodeJS{
-    position: absolute;
-    top: 140px;
-    font: 40px normal, impact;
-    color: #141414;
-    text-align: center;
-    width: 100%;
-}
-/* ================================ React ================================ */
-#React{
-
-    position: absolute;
-    top: 435px;
-    left: calc(50% + 150px);
-    border-radius: 10px;
-    box-shadow: 0px 0px 30px 30px rgb(0, 0, 0);
-    width: 200px;
-    height: 200px;
-
-    backdrop-filter: blur(3px) saturate(200%);
-    -webkit-backdrop-filter: blur(3px) saturate(200%);
-    background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
-    transition: linear 0.5s;
-    
-
-}
-#React:hover{
-    background-color: rgba(255, 255, 255, 0.8);
-
-}
-#logoReact{
-    position: relative;
-    width: 130px;
-    top: 25px;
-    left: 35px;
-
-    transition: 5s linear; 
-
-}
-#logoReact:hover{
-    animation-name: React;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-@keyframes React{
-    0%{
-        transform: rotate(0deg);
-    }
-    25%{
-        transform: rotate(5deg);
-    }
-    50%{
-        transform: rotate(0deg);
-    }
-    75%{
-        transform: rotate(-5deg);
-    }
-    100%{
-        transform: rotate(0deg);
-    }
-}
-#txt_React{
-    position: absolute;
-    top: 140px;
-    font: 40px normal, impact;
-    color: #141414;
-    text-align: center;
-    width: 100%;
-}
-/* ================================ FireBase ================================ */
-#FireBase{
-
-    position: absolute;
-    top: 435px;
-    left: calc(50% + 400px);
-    border-radius: 10px;
-    box-shadow: 0px 0px 30px 30px rgb(0, 0, 0);
-    width: 200px;
-    height: 200px;
-
-    backdrop-filter: blur(3px) saturate(200%);
-    -webkit-backdrop-filter: blur(3px) saturate(200%);
-    background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
-    transition: linear 0.5s;
-    
-
-}
-#FireBase:hover{
-    background-color: rgba(255, 255, 255, 0.8);
-
-}
-#logoFireBase{
-    position: relative;
-    width: 120px;
-    top: 20px;
-    left: 40px;
-
-    transition: 5s linear; 
-
-}
-#logoFireBase:hover{
-    
-    animation-name: FireBase;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-@keyframes FireBase{
-    0%{
-
-        transform: rotate(0deg);
-    }
-    25%{
-        transform: rotate(5deg);
-    }
-    50%{
-        transform: rotate(0deg);
-    }
-    75%{
-        transform: rotate(-5deg);
-    }
-    100%{
-        transform: rotate(0deg);
-    }
-}
-#txt_FireBase{
-    position: absolute;
-    top: 140px;
-    font: 40px normal, impact;
-    color: #141414;
-    text-align: center;
-    width: 100%;
-}
-/* ================================ teste ================================ */
-
-footer{
-    position: relative;
-    top: 1855px;
-    width: 100%;
-    height: 660px;
-    background-color: aqua;
-    display: grid;
-    grid-template-rows: 1fr 10rem auto;
-    grid-template-areas: "main" "." "footer";
-    overflow-x: hidden;
-    background: #141516;
-    min-height: 100vh;
-    font-family: "Open Sans", sans-serif;
   }
-  footer .footer {
-    z-index: 01;
-    --footer-background:#70f26c;
-    display: grid;
-    position: relative;
-    grid-area: footer;
-    min-height: 12rem;
+  25% {
+    left: calc(50% + 240px);
+    top: -5px;
   }
-  footer .footer .bubbles {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 1rem;
-    background: var(--footer-background);
-    filter: url("#blob");
+  30% {
+    left: calc(50% + 240px);
+    top: -28px;
   }
-  footer .footer .bubbles .bubble {
-    position: absolute;
-    left: var(--position, 50%);
-    background: var(--footer-background);
-    border-radius: 100%;
-    -webkit-animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
-            animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
-    transform: translate(-50%, 100%);
+  70% {
+    left: calc(50% - 245px);
+    top: -28px;
   }
-  footer .footer .content {
-    z-index: 2;
-    display: grid;
-    grid-template-columns: 1fr auto;
-    grid-gap: 4rem;
-    padding: 2rem;
-    background: var(--footer-background);
+  75% {
+    left: calc(50% - 245px);
+    top: -5px;
   }
-  footer .footer .content a, body .footer .content p {
-    color: #F5F7FA;
-    text-decoration: none;
+  100% {
+    left: 10px;
+    top: -5px;
   }
-  footer .footer .content b {
-    color: white;
-  }
-  footer .footer .content p {
-    margin: 0;
-    font-size: 0.75rem;
-  }
-  footer .footer .content > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  footer .footer .content > div > div {
-    margin: 0.25rem 0;
-  }
-  footer .footer .content > div > div > * {
-    margin-right: 0.5rem;
-  }
-  footer .footer .content > div .image {
-    align-self: center;
-    width: 4rem;
-    height: 4rem;
-    margin: 0.25rem 0;
-    background-size: cover;
-    background-position: center;
-  }
-  
-  @-webkit-keyframes bubble-size {
-    0%, 75% {
-      width: var(--size, 4rem);
-      height: var(--size, 4rem);
-    }
-    100% {
-      width: 0rem;
-      height: 0rem;
-    }
-  }
-  
-  @keyframes bubble-size {
-    0%, 75% {
-      width: var(--size, 4rem);
-      height: var(--size, 4rem);
-    }
-    100% {
-      width: 0rem;
-      height: 0rem;
-    }
-  }
-  @-webkit-keyframes bubble-move {
-    0% {
-      bottom: -4rem;
-    }
-    100% {
-      bottom: var(--distance, 10rem);
-    }
-  }
-  @keyframes bubble-move {
-    0% {
-      bottom: -4rem;
-    }
-    100% {
-      bottom: var(--distance, 10rem);
-    }
-  }
-  h2{
-    position: absolute;
-    width: 100%;
-    top: 25px;
-    text-align: center;
-    font: 40px normal, Century Gothic;
-  }
-  h3{
-    position: absolute;
-    top: 80px;
-    width: 100%;
-    text-align: center;
-    font: 30px normal, Century Gothic;
-  }
-  #email{
-    color:#6AFF2A;
-  }
-  h4{
-    position: absolute;
-    top: 145px;
-    width: 100%;
-    text-align: center;
-    font: 25px normal, Century Gothic;
-  }
-
-  .SocialMidia{
-    position: absolute;
-    top: 235px;
-    width: 80px;
-    
-  }
-  #instagram{
-    left: calc( 50% - 450px);
-  }
-  #facebook{
-    left: calc( 50% - 290px);
-  }
-  #whatsapp{
-    left: calc( 50% - 130px);
-  }
-  #snapchat{
-    right: calc( 50% - 130px);
-  }
-  #github{
-    right: calc( 50% - 310px);
-  }
-  #linkedin{
-    right: calc( 50% - 490px);
-
-  }
- .containers{
-    width: 100px;
-    height: 100px;
-    background-color: #141516de;
-    position: absolute;
-    top: 225px;
-    transition: linear 1s;
 }
- .containers:hover{
-    background-color: #14151600;
-
- }
-  #container1{
-    left: calc(50% - 450px - 10px);
-  }
-
-  #container2{
-    left: calc(50% - 290px - 10px);
-  }
-  #container3{
-    left: calc(50% - 130px - 10px);
-  }
-  #container4{
-    right: calc(50% - 130px - 10px);
-  }
-  #container5{
-    right: calc(50% - 310px - 10px);
-  }
-  #container6{
-    right: calc(50% - 490px - 10px);
-  }
-
-  #teste{
-    position: absolute;
-    width: 1px;
-    height: 150px;
-    background-color: red;
-    left: calc(50% - 0.5px);
-    top: 200px;
-  }
-  
-  .txt{
-    left: 20px;
-    position: absolute;
-    font: 20px normal, Century Gothic;
-    color: #141516;
-
-  }
-#txtnome{
-    top: 10px;
-    font-weight: bold;
+#caminho {
+  position: absolute;
+  left: 0.5%;
+  top: -6px;
+  width: 99%;
+  height: 9px;
+  border: 1px solid #272727;
+  background-color: #000;
 }
-#txt1{
-    top: 50px;
+.quadro {
+  width: 200px;
+  height: 200px;
 }
-#txt2{
-    top: 80px;
+#html {
+  position: absolute;
+  top: 80px;
+  left: calc(50% - 600px);
+  border-radius: 10px;
+  box-shadow: 0 0 30px 30px #000;
+  backdrop-filter: blur(3px) saturate(200%);
+  -webkit-backdrop-filter: blur(3px) saturate(200%);
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
 }
-#txt3{
-    top: 110px;
+#html:hover {
+  background-color: rgba(255, 255, 255, 0.8);
 }
-#txt4{
-    top: 150px;
-    font-weight: bold;
+#logohtml {
+  position: relative;
+  width: 150px;
+  top: 10px;
+  left: 25px;
+}
+#logohtml:hover {
+  animation-name: balanco;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
-#ViniciusLogoCz{
-    position: absolute;
-    top: 60px;
-    height: 80px;
-    right: 20px;
+#txt_html {
+  position: absolute;
+  top: 140px;
+  font: 40px normal, impact;
+  color: #141414;
+  text-align: center;
+  width: 100%;
+}
+#css {
+  position: absolute;
+  top: 80px;
+  left: calc(50% - 350px);
+  border-radius: 10px;
+  box-shadow: 0 0 30px 30px #000;
+  backdrop-filter: blur(3px) saturate(200%);
+  -webkit-backdrop-filter: blur(3px) saturate(200%);
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+#css:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+#logocss {
+  position: relative;
+  width: 130px;
+  top: 21px;
+  left: 33px;
+}
+#logocss:hover {
+  animation-name: balanco;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#txt_css {
+  position: absolute;
+  top: 140px;
+  font: 40px normal, impact;
+  color: #141414;
+  text-align: center;
+  width: 100%;
+}
+#js {
+  position: absolute;
+  top: 80px;
+  left: calc(50% - 100px);
+  border-radius: 10px;
+  box-shadow: 0 0 30px 30px #000;
+  backdrop-filter: blur(3px) saturate(200%);
+  -webkit-backdrop-filter: blur(3px) saturate(200%);
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+#js:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+#logojs {
+  position: relative;
+  width: 220px;
+  top: 25px;
+  left: -8px;
+}
+#logojs:hover {
+  animation-name: balanco;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#txt_js {
+  position: absolute;
+  top: 140px;
+  font: 40px normal, impact;
+  color: #141414;
+  text-align: center;
+  width: 100%;
+}
+#figma {
+  position: absolute;
+  top: 80px;
+  left: calc(50% + 150px);
+  border-radius: 10px;
+  box-shadow: 0 0 30px 30px #000;
+  backdrop-filter: blur(3px) saturate(200%);
+  -webkit-backdrop-filter: blur(3px) saturate(200%);
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+#figma:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+#logofigma {
+  position: relative;
+  width: 80px;
+  top: 25px;
+  left: 60px;
+}
+#logofigma:hover {
+  animation-name: balanco;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#txt_figma {
+  position: absolute;
+  top: 140px;
+  font: 40px normal, impact;
+  color: #141414;
+  text-align: center;
+  width: 100%;
+}
+#office {
+  position: absolute;
+  top: 80px;
+  left: calc(50% + 400px);
+  border-radius: 10px;
+  box-shadow: 0 0 30px 30px #000;
+  backdrop-filter: blur(3px) saturate(200%);
+  -webkit-backdrop-filter: blur(3px) saturate(200%);
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+#office:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+#logooffice {
+  position: relative;
+  width: 120px;
+  top: 25px;
+  left: 40px;
+}
+#logooffice:hover {
+  animation-name: balanco;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#txt_office {
+  position: absolute;
+  top: 140px;
+  font: 40px normal, impact;
+  color: #141414;
+  text-align: center;
+  width: 100%;
+}
+#estudos {
+  left: calc(50% - 150px);
+  position: absolute;
+  font: 30px normal, Century Gothic;
+  text-align: center;
+  width: 300px;
+  top: 330px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #000;
+  backdrop-filter: blur(3px) saturate(200%);
+  -webkit-backdrop-filter: blur(3px) saturate(200%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  box-shadow: 0 0 15px 5px #000;
+}
+#jQuery {
+  position: absolute;
+  top: 435px;
+  left: calc(50% - 600px);
+  border-radius: 10px;
+  box-shadow: 0 0 30px 30px #000;
+  backdrop-filter: blur(3px) saturate(200%);
+  -webkit-backdrop-filter: blur(3px) saturate(200%);
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+#jQuery:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+#logojQuery {
+  position: relative;
+  width: 120px;
+  top: 25px;
+  left: 40px;
+}
+#logojQuery:hover {
+  animation-name: balanco;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#txt_jQuery {
+  position: absolute;
+  top: 140px;
+  font: 40px normal, impact;
+  color: #141414;
+  text-align: center;
+  width: 100%;
+}
+#Bootstrap {
+  position: absolute;
+  top: 435px;
+  left: calc(50% - 350px);
+  border-radius: 10px;
+  box-shadow: 0 0 30px 30px #000;
+  backdrop-filter: blur(3px) saturate(200%);
+  -webkit-backdrop-filter: blur(3px) saturate(200%);
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+#Bootstrap:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+#logoBootstrap {
+  position: relative;
+  width: 150px;
+  top: 25px;
+  left: 25px;
+}
+#logoBootstrap:hover {
+  animation-name: balanco;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#txt_Bootstrap {
+  position: absolute;
+  top: 140px;
+  font: 40px normal, impact;
+  color: #141414;
+  text-align: center;
+  width: 100%;
+}
+#NodeJS {
+  position: absolute;
+  top: 435px;
+  left: calc(50% - 100px);
+  border-radius: 10px;
+  box-shadow: 0 0 30px 30px #000;
+  backdrop-filter: blur(3px) saturate(200%);
+  -webkit-backdrop-filter: blur(3px) saturate(200%);
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+#NodeJS:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+#logoNodeJS {
+  position: relative;
+  width: 170px;
+  top: 35px;
+  left: 15px;
+}
+#logoNodeJS:hover {
+  animation-name: balanco;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#txt_NodeJS {
+  position: absolute;
+  top: 140px;
+  font: 40px normal, impact;
+  color: #141414;
+  text-align: center;
+  width: 100%;
+}
+#React {
+  position: absolute;
+  top: 435px;
+  left: calc(50% + 150px);
+  border-radius: 10px;
+  box-shadow: 0 0 30px 30px #000;
+  backdrop-filter: blur(3px) saturate(200%);
+  -webkit-backdrop-filter: blur(3px) saturate(200%);
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+#React:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+#logoReact {
+  position: relative;
+  width: 130px;
+  top: 25px;
+  left: 35px;
+}
+#logoReact:hover {
+  animation-name: balanco;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#txt_React {
+  position: absolute;
+  top: 140px;
+  font: 40px normal, impact;
+  color: #141414;
+  text-align: center;
+  width: 100%;
+}
+#FireBase {
+  position: absolute;
+  top: 435px;
+  left: calc(50% + 400px);
+  border-radius: 10px;
+  box-shadow: 0 0 30px 30px #000;
+  backdrop-filter: blur(3px) saturate(200%);
+  -webkit-backdrop-filter: blur(3px) saturate(200%);
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+#FireBase:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+#logoFireBase {
+  position: relative;
+  width: 120px;
+  top: 20px;
+  left: 40px;
+}
+#logoFireBase:hover {
+  animation-name: balanco;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#txt_FireBase {
+  position: absolute;
+  top: 140px;
+  font: 40px normal, impact;
+  color: #141414;
+  text-align: center;
+  width: 100%;
+}
+footer {
+  position: relative;
+  top: 1855px;
+  width: 100%;
+  height: 660px;
+  background-color: #0ff;
+  display: grid;
+  grid-template-rows: 1fr 10rem auto;
+  grid-template-areas: "main" "." "footer";
+  overflow-x: hidden;
+  background: #141516;
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
+footer .footer {
+  z-index: 1;
+  --footer-background: #70f26c;
+  display: grid;
+  position: relative;
+  grid-area: footer;
+  min-height: 12rem;
+}
+footer .footer .bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1rem;
+  background: var(--footer-background);
+  filter: url(#blob);
+}
+footer .footer .bubbles .bubble {
+  position: absolute;
+  left: var(--position, 50%);
+  background: var(--footer-background);
+  border-radius: 100%;
+  -webkit-animation: bubble-size var(--time, 4s) ease-in infinite
+      var(--delay, 0s),
+    bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
+  animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s),
+    bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
+  transform: translate(-50%, 100%);
+}
+footer .footer .content {
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 4rem;
+  padding: 2rem;
+  background: var(--footer-background);
+}
+footer .footer .content a {
+  color: #f5f7fa;
+  text-decoration: none;
+}
+footer .footer .content b {
+  color: #fff;
+}
+footer .footer .content > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer .footer .content > div > div {
+  margin: 0.25rem 0;
+}
+footer .footer .content > div > div > * {
+  margin-right: 0.5rem;
+}
+@-webkit-keyframes bubble-size {
+  0%,
+  75% {
+    width: var(--size, 4rem);
+    height: var(--size, 4rem);
+  }
+  100% {
+    width: 0;
+    height: 0;
+  }
+}
+@keyframes bubble-size {
+  0%,
+  75% {
+    width: var(--size, 4rem);
+    height: var(--size, 4rem);
+  }
+  100% {
+    width: 0;
+    height: 0;
+  }
+}
+@-webkit-keyframes bubble-move {
+  0% {
+    bottom: -4rem;
+  }
+  100% {
+    bottom: var(--distance, 10rem);
+  }
+}
+@keyframes bubble-move {
+  0% {
+    bottom: -4rem;
+  }
+  100% {
+    bottom: var(--distance, 10rem);
+  }
+}
+h2 {
+  position: absolute;
+  width: 100%;
+  top: 25px;
+  text-align: center;
+  font: 40px normal, Century Gothic;
+}
+h3 {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  text-align: center;
+  font: 30px normal, Century Gothic;
+}
+#email {
+  color: #6aff2a;
+}
+h4 {
+  position: absolute;
+  top: 145px;
+  width: 100%;
+  text-align: center;
+  font: 25px normal, Century Gothic;
+}
+.SocialMidia {
+  position: absolute;
+  top: 235px;
+  width: 80px;
+}
+#instagram {
+  left: calc(50% - 450px);
+}
+#facebook {
+  left: calc(50% - 290px);
+}
+#whatsapp {
+  left: calc(50% - 130px);
+}
+#snapchat {
+  right: calc(50% - 130px);
+}
+#github {
+  right: calc(50% - 310px);
+}
+#linkedin {
+  right: calc(50% - 490px);
+}
+.containers {
+  width: 100px;
+  height: 100px;
+  background-color: #141516de;
+  position: absolute;
+  top: 225px;
+  transition: linear 1s;
+}
+.containers:hover {
+  background-color: #14151600;
+}
+#container1 {
+  left: calc(50% - 450px - 10px);
+}
+#container2 {
+  left: calc(50% - 290px - 10px);
+}
+#container3 {
+  left: calc(50% - 130px - 10px);
+}
+#container4 {
+  right: calc(50% - 130px - 10px);
+}
+#container5 {
+  right: calc(50% - 310px - 10px);
+}
+#container6 {
+  right: calc(50% - 490px - 10px);
+}
+.txt {
+  left: 20px;
+  position: absolute;
+  font: 20px normal, Century Gothic;
+  color: #141516;
+}
+#txtnome {
+  top: 10px;
+  font-weight: 700;
+}
+#txt1 {
+  top: 50px;
+}
+#txt2 {
+  top: 80px;
+}
+#txt3 {
+  top: 110px;
+}
+#txt4 {
+  top: 150px;
+  font-weight: 700;
+}
+#ViniciusLogoCz {
+  position: absolute;
+  top: 60px;
+  height: 80px;
+  right: 20px;
 }
 ::-webkit-scrollbar-track {
-    background-color: #141516;
+  background-color: #141516;
 }
 ::-webkit-scrollbar {
-    width: 9px;
+  width: 9px;
 }
 ::-webkit-scrollbar-thumb {
-    background: #70f26c;
+  background: #70f26c;
 }
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+@keyframes balanco {
+  0% {
+    transform: rotate(0);
   }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@media (max-width: 1235px) {
+  #estudos {
+    top: 310px;
+  }
+  #foto {
+    right: 20px;
+    width: 300px;
+  }
+  #text {
+    margin-left: 20px;
+    width: 700px;
+  }
+  .quadro {
+    width: 160px;
+    height: 160px;
+  }
+  #html {
+    left: calc(50% - 470px);
+    box-shadow: 0 0 20px 20px #000;
+  }
+
+  #logohtml {
+    width: 120px;
+    top: 6.4px;
+    left: 20px;
+  }
+
+  #txt_html {
+    top: 112px;
+    font: 32px normal, impact;
+  }
+  #css {
+    top: 80px;
+    left: calc(50% - 275px);
+    box-shadow: 0 0 20px 20px #000;
+  }
+  #logocss {
+    width: 104px;
+    top: 15px;
+    left: 30px;
+  }
+
+  #txt_css {
+    top: 112px;
+    font: 32px normal, impact;
+  }
+  #js {
+    top: 80px;
+    left: calc(50% - 80px);
+    box-shadow: 0 0 20px 20px #000;
+  }
+  #logojs {
+    width: 176px;
+    top: 15px;
+    left: -6.4px;
+  }
+
+  #txt_js {
+    top: 112px;
+    font: 32px normal, impact;
+  }
+  #figma {
+    top: 80px;
+    left: calc(50% + 115px);
+    box-shadow: 0 0 20px 20px #000;
+  }
+  #logofigma {
+    width: 64px;
+    top: 20px;
+    left: 48px;
+  }
+
+  #txt_figma {
+    top: 112px;
+    font: 32px normal, impact;
+  }
+  #office {
+    top: 80px;
+    left: calc(50% + 310px);
+    box-shadow: 0 0 20px 20px #000;
+  }
+  #logooffice {
+    width: 96px;
+    top: 20px;
+    left: 32px;
+  }
+  #txt_office {
+    top: 112px;
+    font: 32px normal, impact;
+  }
+
+  #jQuery {
+    top: 435px;
+    left: calc(50% - 470px);
+    box-shadow: 0 0 20px 20px #000;
+  }
+  #logojQuery {
+    width: 96px;
+    top: 20px;
+    left: 32px;
+  }
+
+  #txt_jQuery {
+    top: 112px;
+    font: 32px normal, impact;
+  }
+  #Bootstrap {
+    top: 435px;
+    left: calc(50% - 275px);
+    box-shadow: 0 0 20px 20px #000;
+  }
+
+  #logoBootstrap {
+    width: 120px;
+    top: 20px;
+    left: 20px;
+  }
+  #txt_Bootstrap {
+    top: 112px;
+    font: 32px normal, impact;
+  }
+  #NodeJS {
+    top: 435px;
+    left: calc(50% - 80px);
+    box-shadow: 0 0 20px 20px #000;
+  }
+
+  #logoNodeJS {
+    width: 136px;
+    top: 30px;
+    left: 15px;
+  }
+
+  #txt_NodeJS {
+    top: 112px;
+    font: 32px normal, impact;
+  }
+  #React {
+    top: 435px;
+    left: calc(50% + 115px);
+    box-shadow: 0 0 20px 20px #000;
+  }
+
+  #logoReact {
+    width: 104px;
+    top: 20px;
+    left: 30px;
+  }
+
+  #txt_React {
+    top: 112px;
+    font: 32px normal, impact;
+  }
+  #FireBase {
+    top: 435px;
+    left: calc(50% + 310px);
+    box-shadow: 0 0 20px 20px #000;
+  }
+
+  #logoFireBase {
+    width: 96px;
+    top: 15px;
+    left: 35px;
+  }
+
+  #txt_FireBase {
+    top: 112px;
+    font: 32px normal, impact;
+  }
+
+  @media (max-width: 1045px) {
+    .header {
+      margin-left: 20px;
+      top: -70px;
+    }
+  }
+
+  @media (max-width: 1025px) {
+    h4 {
+      top: 180px;
+    }
+    #email {
+      position: relative;
+      top: 10px;
+    }
+    #text {
+      width: 600px;
+    }
+  }
+  @media (max-width: 1000px) {
+    #T1 {
+      left: 20px;
+    }
+    #T2 {
+      left: 0px;
+    }
+    #T3 {
+      left: 20px;
+    }
+    #About-Me {
+      left: 72px;
+    }
+
+    .SocialMidia {
+      position: absolute;
+      top: 235px;
+      width: 80px;
+    }
+    #instagram {
+      left: calc(50% - 130px);
+    }
+    #facebook {
+      left: calc(50% - 40px);
+    }
+    #whatsapp {
+      left: calc(50% + 50px);
+    }
+    #snapchat {
+      top: 350px;
+      left: calc(50% - 130px);
+    }
+    #github {
+      top: 350px;
+      left: calc(50% - 40px);
+    }
+    #linkedin {
+      top: 350px;
+      left: calc(50% + 50px);
+    }
+    #container1 {
+      left: calc(50% - 130px - 10px);
+    }
+    #container2 {
+      left: calc(50% - 40px - 10px);
+    }
+    #container3 {
+      left: calc(50% + 50px - 10px);
+    }
+    #container4 {
+      top: 350px;
+
+      left: calc(50% - 130px - 10px);
+    }
+    #container5 {
+      top: 350px;
+
+      left: calc(50% - 40px - 10px);
+    }
+    #container6 {
+      top: 350px;
+
+      left: calc(50% + 50px - 10px);
+    }
+    footer {
+      top: 1855px;
+    }
+    #contato {
+      height: 750px;
+    }
+  }
+}
+@media (max-width: 950px) {
+  #Fundo {
+    width: 550px;
+  }
+  #body {
+    top: 595px;
+  }
+  #contato {
+    top: 2105px;
+  }
+
+  #html {
+    top: 275px;
+    left: calc(50% - 185px);
+  }
+  #office {
+    top: 275px;
+    left: calc(50% + 10px);
+  }
+  #estudos {
+    top: 475px;
+  }
+  #Bootstrap {
+    top: 575px;
+  }
+  #NodeJS {
+    top: 575px;
+  }
+  #React {
+    top: 575px;
+  }
+  #Bootstrap {
+    top: 575px;
+  }
+  #jQuery {
+    top: 770px;
+    left: calc(50% - 185px);
+  }
+  #FireBase {
+    top: 770px;
+    left: calc(50% + 10px);
+  }
+#experiencia {
+  background-image: url(img/Fundo2.svg);
+  position: absolute;
+  top: 648px;
+  width: 100%;
+  height: 970px;
+  background-size: cover;
+}
+}
+@media (max-width: 950px){
+#Fundo{
+    width: 400px;
+    height: 90%;
+    object-fit: cover;
+    object-position: left;
+}
+#text{
+    width: 500px;
+    margin-top: 20px;
+}
+#foto{
+    right: 0px;
+    width: 240px;
+}
+}
+@media (max-width: 750px){
+#Fundo{
+    width: 150px;
+    height: 80%;
+    object-fit: cover;
+    object-position: left;
+}
+.header{
+    display: none;
+}
+#Vinicius{
+    height: 40px;
+    padding: 20px 20px 20px 20px;
+}
+#T1 {
+  left: 60px;
+  top: 200px;
+  font: 20px normal, Century Gothic;
+}
+#T2 {
+  left: 10px;
+  position: absolute;
+  top: 220px;
+  font: 85px normal, Century Gothic;
+}
+#T3 {
+  left: 50px;
+  position: absolute;
+  top: 310px;
+  font: 20px normal, Century Gothic;
+  color: #70f26c;
+}
+#About-Me {
+  text-decoration: none;
+  left: 70px;
+  position: absolute;
+  top: 340px;
+  color: #000;
+  background-color: #70f26c;
+  border-radius: 50px;
+  padding: 10px 15px 10px 15px;
+  font: 25px bold, Century Gothic;
+}
+#text {
+    margin-left: 10px;
+  width: 400px;
+  font: 15px bold, Century Gothic;
+  margin-top: 20px;
+}
+#foto{
+    top: 50px;
+    width: 140px;
+}
+h2 {
+  top: 25px;
+  font: 25px normal, Century Gothic;
+}
+h3 {
+  top: 60px;
+  width: 100%;
+  font: 20px normal, Century Gothic;
+}
+
+h4 {
+  position: absolute;
+  top: 130px;
+  width: 100%;
+  text-align: center;
+  font: 20px normal, Century Gothic;
+}
+
+.txt {
+  left: 10px;
+  width: 100%;
+  text-align: center;
+  font: 15px normal, Century Gothic;
+  color: #141516;
+}
+#txtnome {
+  top: 0px;
+  font-weight: 700;
+}
+#txt1 {
+  top: 20px;
+}
+#txt2 {
+  top: 40px;
+}
+#txt3 {
+  top: 60px;
+}
+#txt4 {
+  top: 80px;
+  font-weight: 700;
+}
+#ViniciusLogoCz {
+  position: absolute;
+  top: 105px;
+  height: 60px;
+  right: calc(50% - 120px);
+}
+#figma{
+            left: calc(50% + 85px);
+
+                  box-shadow: 0 0 00px 00px #000;
+
+}
+#js{
+                  box-shadow: 0 0 00px 00px #000;
+
+}
+#css{
+        left: calc(50% - 245px);
+              box-shadow: 0 0 00px 00px #000;
+
+}
+  #html {
+    top: 275px;
+    left: calc(50% - 160px);
+              box-shadow: 0 0 00px 00px #000;
+
+  }
+  #office {
+    top: 275px;
+    left: calc(50% + 5px);
+              box-shadow: 0 0 00px 00px #000;
+
+  }
+  #estudos {
+    top: 475px;
+              box-shadow: 0 0 00px 00px #000;
+
+  }
+
+  #NodeJS {
+    top: 575px;
+              box-shadow: 0 0 00px 00px #000;
+
+  }
+  #React {
+    top: 575px;
+        left: calc(50% + 85px);
+          box-shadow: 0 0 00px 00px #000;
+
+
+  }
+  #Bootstrap {
+    top: 575px;
+    left: calc(50% - 245px);
+              box-shadow: 0 0 00px 00px #000;
+
+  }
+  #jQuery {
+    top: 770px;
+    left: calc(50% - 160px);
+              box-shadow: 0 0 00px 00px #000;
+
+  }
+  #FireBase {
+    top: 770px;
+    left: calc(50% + 5px);
+              box-shadow: 0 0 00px 00px #000;
+
+  }
+  #xp1{
+    display: none;
+  }
+  #xp2{
+    display: none;
+  }
+}
